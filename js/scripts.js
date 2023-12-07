@@ -35,24 +35,23 @@
 #IndiaMap 
 */
 
-/* /* var t1 = gsap.timeline();
- */
+var t1 = gsap.timeline();
 /* t1.fromTo("#BritishMap", 
 {x: 100, opacity: 0},
 {x: -250, opacity: 1, duration: 4}) */
 
-/* gsap.registerPlugin(ScrollTrigger);
- */
+gsap.registerPlugin(ScrollTrigger);
+
 /* gsap.fromTo("#BritishMap", 
 {x: -400, opacity: 0},
-{x: -250, opacity: 1, duration: 4, scrollTrigger: "#BritishMap"}); */
+{x: -250, opacity: 1, duration: 4, scrollTrigger: "#BritishMap"});
 
 
-/* gsap.fromTo("#IndiaMap",
+gsap.fromTo("#IndiaMap",
 {x: 400, opacity: 0},
 {x: 50, opacity: 1, duration: 4, scrollTrigger: "#IndiaMap"}); */
 
-/* gsap.fromTo(
+gsap.fromTo(
   "#IndiaMap",
   { x: 850, opacity: 0 },
   { x: 50,
@@ -95,39 +94,5 @@ gsap.fromTo(
         trigger: "#IndainMilitary1",
         scrub: true,
     },
-}); */
-
-// scripts.js
-
-// Function to initialize GSAP scroll trigger
-function initScrollTrigger() {
-    // Register the scroll trigger
-    gsap.registerPlugin(ScrollTrigger);
-  
-    // Define the timeline for the animation
-    const timeline = gsap.timeline({
-      scrollTrigger: {
-        trigger: "#IndiaMap", // Trigger element ID
-        start: "top center",   // Trigger position
-        end: "bottom center",  // End position
-        markers: true,         // Show markers for debugging (set to false in production)
-        scrub: true            // Smooth scrubbing effect
-      }
-    });
-  
-    // Set initial state (hidden)
-    timeline.from("#IndiaMap", { opacity: 0, scale: 0.5 });
-  
-    // Define the animation (you can customize this part based on your design)
-    timeline.to("#IndiaMap", {
-      opacity: 1,
-      scale: 1,
-      duration: 1
-    });
-  }
-  
-  // Run the initialization function when the DOM is ready
-  document.addEventListener("DOMContentLoaded", function () {
-    initScrollTrigger();
-  });
+});
   

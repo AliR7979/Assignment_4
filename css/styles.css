@@ -28,15 +28,6 @@ p {
     font-weight: bold;
 }
 
-#IndiaMap {
-    /* Set styles for the container element (adjust as needed) */
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
 #Churchill, #Victoria, #Protest1, #Protest2,
 #Protest3, #BritishMilitary1, #BritishMilitary2,
 #BritishMilitary3, #WestIndiaCompany, #LondonTower,
