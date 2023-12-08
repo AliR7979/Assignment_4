@@ -34,20 +34,6 @@
 #BritishMap
 #IndiaMap 
 */
-
-/* // Animation for #ShipSailer
-tl.fromTo("#ShipSailer",
-{ x: 800, y: 900, opacity: 0 },
-{ x: 200, y: 650, opacity: 1, duration: 5, scale: 0.5});
-
-// ScrollTrigger for #ShipSailer
-ScrollTrigger.create({
-  animation: tl,
-  trigger: "#ShipSailer",
-  start: "top center",
-  end: "top",  // Updated end value to "top"
-  scrub: true,
-}); */
   
 var tl = gsap.timeline();
 
@@ -220,17 +206,6 @@ ScrollTrigger.create({
 tl.to("#Protest1, #Protest2, #Protest3",
 { x: 5, scale: 0.75, duration: 5,});
 
-/* tl.fromTo("#IndianMilitary1",
-{ x: 800, y: -20 , opacity: 1},
-{ x: 10, y: -100 , opacity: 1, duration: 9, scale: 1, ease: "SlowMo.ease"});
-ScrollTrigger.create({
-  animation: tl,
-  trigger: "#IndianMilitary1",
-  start: "top center",
-  end: "bottom center +=200%",
-  scrub: 5,
-}); */
-
 tl.fromTo("#MilitaryShoot1",
 { x: 0, y: 50 , opacity: 0},
 { x: -500, y: 30 , opacity: 1, duration: 4, scale: 1.5, ease: "SlowMo.ease"});
@@ -354,26 +329,6 @@ ScrollTrigger.create({
   end: "bottom center +=2000px",
   scrub: 5,
 });
-
-/* let svgElement = document.getElementById("Protest1");
-let numClones = 5; // Number of clones you want to create
-
-for (let i = 1; i <= numClones; i++) {
-  let clonedElement = svgElement.cloneNode(true);
-  clonedElement.id = "Protest11" + i; // Give the cloned element a new ID
-  svgElement.parentNode.appendChild(clonedElement);
-
-  tl.fromTo("#" + clonedElement.id,
-  { x: -100, y: 0 , opacity: 0},
-  { x: 110, y: 10 , opacity: 1, duration: 4, scale: 0.75});
-  ScrollTrigger.create({
-    animation: tl,
-    trigger: "#" + clonedElement.id,
-    start: "top center +=2000px",
-    end: "bottom center +=2000px",
-    scrub: 5,
-  });
-} */
 
 tl.to("#Protest1, #Protest2, #Protest3, #Victoria",
 {opacity: 0, duration: 5});
