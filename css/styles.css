@@ -6,28 +6,42 @@ body {
     font-family: 'Cinzel', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     position: relative;
-    overflow-x: hidden;
+    height: 2000vh;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
 }
 
-.header {
-    padding: 50px;
+body::-webkit-scrollbar {
+  width: 1px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+header {
+  margin-top: 10px;
+  padding: 0;
+}
+
+svg {
+  position: fixed;
 }
 
 h1 {
     text-align: center;
     font-size: 55px;
+    margin: 0;
+    padding: 0;
 }
 
 p {
     text-align: center;
     font-size: 15px;
-    margin-bottom: 30px;
     color: #bc4f18;
     font-weight: bold;
 }
-
 #Churchill, #Victoria, #Protest1, #Protest2,
 #Protest3, #BritishMilitary1, #BritishMilitary2,
 #BritishMilitary3, #WestIndiaCompany, #LondonTower,
@@ -676,7 +690,7 @@ p {
   }
 
   .cls-166 {
-    fill: rgb(192, 95, 42);
+    fill: #c05f2a;
     /*     fill: #7c7c7c; */
   }
 
